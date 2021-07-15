@@ -24,7 +24,7 @@ $medicalReviewMetaBio =  $medicalReviewerMetaData['description'][0];
         <div class="editor_container <?php if (!get_field("medical_review_user")) echo "editor_container_no_medical_user"; ?>">
             <div class="editor_wrapper">
                 <div id="editor_avatar_reference" class="">
-                    <img src="<?php echo $authorAvatar['url'] ?>" alt="" loading="lazy">
+                    <img src="<?php echo $authorAvatar['url'] ?>" alt="">
                 </div>
                 <div class="editor_meta_wrapper">
                     <p class="editor_last_date"><span class="editor_last_date_span">Last Edited: </span><span class="editor_last_edit_date"><?php echo get_field('last_edited_date'); ?></span></p>
@@ -42,7 +42,7 @@ $medicalReviewMetaBio =  $medicalReviewerMetaData['description'][0];
         <div class="medical_review_container">
             <div class="medical_review_wrapper">
                 <div id="medical_review_avatar_reference">
-                    <img src="<?php echo $medicalReviewAvatar['url']; ?>" alt="" loading="lazy">
+                    <img src="<?php echo $medicalReviewAvatar['url']; ?>" alt="" width="100px" height="100px" >
                 </div>
                 <div class="medical_review_meta_wrapper">
                     <p class="medical_review_last_date">Clinically Reviewed: </p>
