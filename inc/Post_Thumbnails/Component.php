@@ -34,11 +34,10 @@ class Component implements Component_Interface
 	/**
 	 * Adds the action and filter hooks to integrate with WordPress.
 	 */
-	public function initialize()
-	{
-		add_action('after_setup_theme', [$this, 'action_add_post_thumbnail_support']);
-		//add_action('after_setup_theme', [$this, 'action_add_image_sizes']);
-	}
+	// public function initialize()
+	// {
+	// 	add_action('after_setup_theme', [$this, 'action_add_post_thumbnail_support']);
+	// }
 
 	/**
 	 * Adds support for post thumbnails.
@@ -47,12 +46,4 @@ class Component implements Component_Interface
 	{
 		add_theme_support('post-thumbnails');
 	}
-
-	/**
-	 * Adds custom image sizes.
-	 */
-	// public function action_add_image_sizes()
-	// {
-	// 	add_image_size('sunshine_behavioral_health-featured', 720, 480, true);
-	// }
 }
